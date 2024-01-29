@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -27,22 +27,12 @@
                         <Font name="Palatino Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="322.0" layoutY="364.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 25; -fx-background-color: #004AAD;" text="Login" textFill="WHITE" />
-                  <Button layoutX="322.0" layoutY="440.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 0; -fx-background-color: #04537C;" text="Signup" textFill="WHITE" />
-                  <Label layoutX="313.0" layoutY="326.0" prefHeight="17.0" prefWidth="109.0" text="Forgot your password?" textFill="#fc0505">
-                     <font>
-                        <Font size="11.0" />
-                     </font>
-                  </Label>
-                  <Line endX="-61.0" layoutX="558.0" layoutY="266.0" startX="-100.0" stroke="#04537c" />
-                  <Line endX="-61.0" layoutX="558.0" layoutY="306.0" startX="-100.0" stroke="#04537c" />
-                  <Line endX="-61.0" layoutX="337.0" layoutY="266.0" startX="-100.0" stroke="#04537c" />
-                  <Line endX="-61.0" layoutX="337.0" layoutY="305.0" startX="-100.0" stroke="#04537c" />
-                  <Text fill="#04537c" layoutX="173.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
-                  <Text fill="#04537c" layoutX="174.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-                  <TextField layoutX="287.0" layoutY="253.0" style="-fx-background-radius: 50; -fx-background-color: #C5CBD7;" />
-                  <TextField layoutX="287.0" layoutY="293.0" style="-fx-background-radius: 50; -fx-background-color: #C5CBD7;" />
+                  <Button fx:id="buttonLogin" layoutX="322.0" layoutY="364.0" mnemonicParsing="false" onAction="#mostrarHomepagecliente" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 25; -fx-background-color: #004AAD;" text="Login" textFill="WHITE" />
+                  <Button fx:id="buttonSignup" layoutX="322.0" layoutY="440.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 0; -fx-background-color: #04537C;" text="Signup" textFill="WHITE" />
+                  <TextField fx:id="userTest" layoutX="287.0" layoutY="253.0" promptText="User" style="-fx-background-color: #C5CBD7;" />
                   <Text layoutX="360.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" />
+                  <PasswordField fx:id="passTest" layoutX="286.0" layoutY="292.0" promptText="Password" style="-fx-background-color: #C5CBD7; -fx-border-radius: 90;" />
+                  <Hyperlink fx:id="forgotPasswordLink" layoutX="312.0" layoutY="325.0" text="Forgot Password?" textFill="RED" />
                </children>
             </AnchorPane>
          </center>
