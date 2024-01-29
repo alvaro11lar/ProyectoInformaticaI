@@ -28,7 +28,7 @@
                      </font>
                   </Text>
                   <Button fx:id="buttonLogin" layoutX="322.0" layoutY="364.0" mnemonicParsing="false" onAction="#mostrarHomepagecliente" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 25; -fx-background-color: #004AAD;" text="Login" textFill="WHITE" />
-                  <Button fx:id="buttonSignup" layoutX="322.0" layoutY="440.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 0; -fx-background-color: #04537C;" text="Signup" textFill="WHITE" />
+                  <Button fx:id="buttonSignup" layoutX="322.0" layoutY="440.0" mnemonicParsing="false" onAction="#mostrarHomepagecliente" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 0; -fx-background-color: #04537C;" text="Signup" textFill="WHITE" />
                   <TextField fx:id="userTest" layoutX="287.0" layoutY="253.0" promptText="User" style="-fx-background-color: #C5CBD7;" />
                   <Text layoutX="360.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" />
                   <PasswordField fx:id="passTest" layoutX="286.0" layoutY="292.0" promptText="Password" style="-fx-background-color: #C5CBD7; -fx-border-radius: 90;" />
