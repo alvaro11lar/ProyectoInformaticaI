@@ -6,20 +6,18 @@ public class Person {
 	private String secondsName;
 	private String username;
 	private String password;
-	private String confirmPasword;
 	private String email;
 	private int numero;
 	private String direction;
 	
 
-	public Person(String firstName, String secondsName, String username, String password, String confirmPasword,
+	public Person(String firstName, String secondsName, String username, String password,
 			String email, int numero, String direction) {
 		super();
 		this.firstName = firstName;
 		this.secondsName = secondsName;
 		this.username = username;
 		this.password = password;
-		this.confirmPasword = confirmPasword;
 		this.email = email;
 		this.numero = numero;
 		this.direction = direction;
@@ -57,13 +55,6 @@ public class Person {
 		this.password = password;
 	}
 
-	public String getConfirmPasword() {
-		return confirmPasword;
-	}
-
-	public void setConfirmPasword(String confirmPasword) {
-		this.confirmPasword = confirmPasword;
-	}
 
 	public String getEmail() {
 		return email;

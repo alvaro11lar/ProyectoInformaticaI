@@ -8,20 +8,8 @@ import java.io.IOException;
 
 public class UserFileHandler {
 
-    public static void main(String[] args) {
-        String filePath = "ruta/del/archivo.txt"; // Ruta de tu archivo
 
-        // Leer el archivo
-        readFromFile(filePath);
-
-        // Escribir en el archivo
-        writeToFile(filePath, "nuevoUsuario", "nuevaContraseña");
-
-        // Volver a leer el archivo para verificar la escritura
-        readFromFile(filePath);
-    }
-
-    private static void readFromFile(String filePath) {
+	public static void readFromFile(String filePath) {
         try {
             FileReader fileReader = new FileReader(filePath);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -44,13 +32,13 @@ public class UserFileHandler {
         }
     }
 
-    private static void writeToFile(String filePath, String newUsername, String newPassword) {
+	public static void writeToFile(String filePath, Client c) {
         try {
             FileWriter fileWriter = new FileWriter(filePath, true); // El segundo parámetro true indica modo de apendizaje
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
             // Escribir la nueva línea en el formato "username:password"
-            bufferedWriter.write(newUsername + ":" + newPassword);
+            bufferedWriter.write(c.getFirstName() + ":" + c.getSecondsName() + ":" + c.getUsername() + ":" + c.getPassword() + ":" + c.getEmail() + ":" + c.getNumero() + ":" + c.getDirection());
             bufferedWriter.newLine(); // Añadir una nueva línea
 
             bufferedWriter.close();

@@ -7,9 +7,9 @@ public class Client extends Person{
 	
 	private List<Product> cart;
 
-	public Client(String firstName, String secondsName, String username, String password, String confirmPasword,
+	public Client(String firstName, String secondsName, String username, String password,
 			String email, int numero, String direction) {
-		super(firstName, secondsName, username, password, confirmPasword, email, numero, direction);
+		super(firstName, secondsName, username, password, email, numero, direction);
 		this.cart= new ArrayList<Product>();
 		
 		
@@ -68,7 +68,6 @@ public class Client extends Person{
 		this.setFirstName(p.getFirstName());
 		this.setEmail(p.getEmail());
 		this.setDirection(p.getDirection());
-		this.setConfirmPasword(p.getConfirmPasword());
 	}
 	
 	
