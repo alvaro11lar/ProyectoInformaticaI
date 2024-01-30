@@ -17,9 +17,9 @@
          <center>
             <AnchorPane prefHeight="506.0" prefWidth="702.0" style="-fx-background-color: #D8DEE8;" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="195.0" fitWidth="200.0" layoutX="267.0" layoutY="36.0">
+                  <ImageView fitHeight="159.0" fitWidth="190.0" layoutX="273.0" layoutY="39.0">
                      <image>
-                        <Image url="@../../../../../Downloads/TPV.png" />
+                        <Image url="@../../imagefxml/ClientIcon.png" />
                      </image>
                   </ImageView>
                   <Text fill="#004aad" layoutX="335.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LogIn">
