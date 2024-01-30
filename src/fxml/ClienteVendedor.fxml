@@ -15,11 +15,11 @@
          <children>
             <ImageView fitHeight="195.0" fitWidth="200.0" layoutX="269.0" layoutY="90.0">
                <image>
-                  <Image url="@../../../../../Downloads/TPV.png" />
+                  <Image url="@../../imagefxml/TPV.png" />
                </image>
             </ImageView>
-            <Button layoutX="265.0" layoutY="329.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="CLIENTE" textFill="WHITE" />
-            <Button layoutX="369.0" layoutY="329.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="VENDEDOR" textFill="WHITE" />
+            <Button layoutX="265.0" layoutY="329.0" mnemonicParsing="false" onAction="#entrarCliente" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="CLIENTE" textFill="WHITE" />
+            <Button layoutX="369.0" layoutY="329.0" mnemonicParsing="false" onAction="#entrarVendedor" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="VENDEDOR" textFill="WHITE" />
             <Text layoutX="316.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿QUE ERES?">
                <font>
                   <Font name="Oriya MN" size="18.0" />

@@ -1,21 +1,20 @@
 package fxml;
 	
-import controller.LoginClienteController;
+import controller.ClienteVendedorControler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/LoginCliente.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ClienteVendedor.fxml"));
 			
-			LoginClienteController control = new LoginClienteController();
+			ClienteVendedorControler control = new ClienteVendedorControler();
 			
 			loader.setController(control);
 			
