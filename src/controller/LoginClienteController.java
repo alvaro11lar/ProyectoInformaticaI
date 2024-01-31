@@ -69,6 +69,7 @@ public class LoginClienteController {
 				} catch(Exception e) {
 					e.printStackTrace();
 				}
+				break;
 			}else {
 			     Alert alert = new Alert(Alert.AlertType.INFORMATION);
 			        alert.setTitle("Mensaje de Alerta");
