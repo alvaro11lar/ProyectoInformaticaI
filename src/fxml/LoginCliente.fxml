@@ -32,7 +32,7 @@
                   <TextField fx:id="userTest" layoutX="287.0" layoutY="253.0" promptText="User" style="-fx-background-color: #C5CBD7;" />
                   <Text layoutX="360.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" />
                   <PasswordField fx:id="passTest" layoutX="286.0" layoutY="292.0" promptText="Password" style="-fx-background-color: #C5CBD7; -fx-border-radius: 90;" />
-                  <Hyperlink fx:id="forgotPasswordLink" layoutX="312.0" layoutY="325.0" text="Forgot Password?" textFill="RED" />
+                  <Hyperlink fx:id="forgotPasswordLink" layoutX="312.0" layoutY="325.0" onAction="#recoverPass" text="Forgot Password?" textFill="RED" />
                </children>
             </AnchorPane>
          </center>

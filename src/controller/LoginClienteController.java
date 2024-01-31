@@ -47,13 +47,15 @@ public class LoginClienteController {
 
 		List<Client> clientes = fu.leer();
 
-			System.out.println(clientes.size());
-	
+		System.out.println(clientes.size());
+
+
+		boolean entro = false;	
 		for(Client c : clientes) {
 			if(c.getUsername().equals(userTest.getText()) & c.getPassword().equals(passTest.getText())) {
 				try {
 					FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/fxml/HomepageCliente.fxml"));
-
+					entro = true;
 					HomepageClienteController control2 = new HomepageClienteController();
 
 					loader2.setController(control2);
@@ -70,18 +72,19 @@ public class LoginClienteController {
 					e.printStackTrace();
 				}
 				break;
-			}else {
-			     Alert alert = new Alert(Alert.AlertType.INFORMATION);
-			        alert.setTitle("Mensaje de Alerta");
-			        alert.setHeaderText(null);
-			        alert.setContentText("Este es un mensaje de alerta.");
-
-			        // Mostrar y esperar
-			        alert.showAndWait();
-			        break;
-			   
-
 			}
+
+
+		}
+
+		if(!entro) {
+			Alert alert = new Alert(Alert.AlertType.INFORMATION);
+			alert.setTitle("Mensaje de Alerta");
+			alert.setHeaderText(null);
+			alert.setContentText("Este es un mensaje de alerta.");
+
+			// Mostrar y esperar
+			alert.showAndWait();
 		}
 	}
 
@@ -94,7 +97,7 @@ public class LoginClienteController {
 		try {
 			FXMLLoader loader3 = new FXMLLoader(getClass().getResource("/fxml/SignupCliente.fxml"));
 
-			SignupClienteController control3 = new SignupClienteController();
+			SignUpCliente control3 = new SignUpCliente();
 
 			loader3.setController(control3);
 
@@ -110,5 +113,11 @@ public class LoginClienteController {
 			e.printStackTrace();
 		}
 	}
+	
+
+    @FXML
+    void recoverPass(ActionEvent event) {
+    	
+    }
 
 }
