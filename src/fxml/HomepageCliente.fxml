@@ -18,34 +18,7 @@
          <left>
             <AnchorPane prefHeight="600.0" prefWidth="1050.0" BorderPane.alignment="CENTER">
                <children>
-<<<<<<< HEAD
-                  <Line endX="799.0" layoutX="101.0" layoutY="47.0" startX="-100.0" />
-                  <Line endX="-125.0" endY="437.0" layoutX="234.0" layoutY="136.0" startX="-125.0" startY="-88.5" />
-                  <Line endX="-163.5" endY="-129.5" layoutX="414.0" layoutY="176.0" startX="-163.5" startY="233.5" />
-                  <Line endX="232.5" layoutX="299.0" layoutY="410.0" startX="-48.0" />
-                  <Line endX="-98.0" endY="-222.5" layoutX="630.0" layoutY="270.0" startX="-98.0" startY="281.0" />
-                  <Line endX="23.0" endY="120.0" layoutX="328.0" layoutY="450.0" startX="23.0" startY="-40.5" />
-                  <Line endX="23.0" endY="122.0" layoutX="238.0" layoutY="450.0" startX="23.0" startY="-40.5" />
-                  <Line endX="130.5" endY="-52.5" layoutX="-22.0" layoutY="461.0" startX="23.0" startY="-52.5" />
-                  <Line endX="130.5" endY="-52.5" layoutX="-25.0" layoutY="574.0" startX="23.0" startY="-52.5" />
-                  <Button fx:id="buttonPurchaseHistory" layoutX="12.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Purchase History" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
-=======
-                  <Line endX="949.0" endY="-1.52587890625E-5" layoutX="101.0" layoutY="47.0" startX="-100.0" />
-                  <Line endX="-125.00003051757812" endY="507.0" layoutX="234.0" layoutY="136.0" startX="-125.0" startY="-88.5" />
-                  <Line endX="-163.5" endY="-129.5" layoutX="423.0" layoutY="176.0" startX="-163.5" startY="307.5" />
-                  <Line endX="328.5" layoutX="301.0" layoutY="485.0" startX="158.5" />
-                  <Line endX="-98.0" endY="-222.5" layoutX="726.0" layoutY="265.0" startX="-98.0" startY="378.0" />
-                  <Line endX="23.0" endY="120.0" layoutX="436.0" layoutY="528.0" startX="23.0" startY="-40.5" />
-                  <Line endX="23.0" endY="122.0" layoutX="301.0" layoutY="527.0" startX="23.0" startY="-43.5" />
-                  <Line endX="130.5" endY="-52.5" layoutX="-22.0" layoutY="535.0" startX="23.0" startY="-52.5" />
-                  <Line endX="130.5" endY="-52.5" layoutX="-23.0" layoutY="653.0" startX="23.0" startY="-52.5" />
-                  <Button fx:id="buttonPurchaseHistory" layoutX="15.0" layoutY="505.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Purchase History" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
->>>>>>> branch 'master' of https://github.com/alvaro11lar/ProyectoInformaticaI.git
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Button>
-<<<<<<< HEAD
+
                   <Button layoutX="29.0" layoutY="376.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Edit" textFill="WHITE" />
                   <Button fx:id="buttonReturnProduct" layoutX="13.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Return Product" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
 =======
