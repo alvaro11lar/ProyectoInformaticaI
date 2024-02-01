@@ -25,8 +25,8 @@
                         <Font name="Palatino Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button fx:id="buttonLogin" layoutX="304.0" layoutY="334.0" mnemonicParsing="false" onAction="#mostrarHomepagecliente" prefHeight="27.0" prefWidth="126.0" style="-fx-background-radius: 25; -fx-background-color: #004AAD;" text="Check Username" textFill="WHITE" />
-                  <TextField layoutX="290.0" layoutY="279.0" promptText="Username" style="-fx-background-color: #C5CBD7;" />
+                  <Button layoutX="304.0" layoutY="334.0" mnemonicParsing="false" onAction="#checkUsernme" prefHeight="27.0" prefWidth="126.0" style="-fx-background-radius: 25; -fx-background-color: #004AAD;" text="Check Username" textFill="WHITE" />
+                  <TextField fx:id="userId" layoutX="290.0" layoutY="279.0" promptText="Username" style="-fx-background-color: #C5CBD7;" />
                </children>
             </AnchorPane>
          </center>

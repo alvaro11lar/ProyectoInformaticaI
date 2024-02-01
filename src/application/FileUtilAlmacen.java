@@ -63,4 +63,42 @@ public class FileUtilAlmacen {
 		return devolver;
 	}
 	
+	public boolean borrar(String username){
+		 File fichero = new File(ruta);
+	        List<String> lineas = new ArrayList<>();
+	        boolean encontrado = false;
+
+	        try {
+	            Scanner s = new Scanner(fichero);
+
+	            // Leer todas las líneas y almacenarlas, excepto la del cliente a borrar
+	            while (s.hasNextLine()) {
+	                String linea = s.nextLine();
+	                // Suponiendo que el username es el tercer campo
+	                if (!linea.split("\\$")[2].equals(username)) {
+	                    lineas.add(linea);
+	                } else {
+	                    encontrado = true; // Marcar si se encontró y se va a borrar el cliente
+	                }
+	            }
+	            s.close();
+
+	            // Reescribir el archivo sin la línea del cliente a borrar
+	            if (encontrado) {
+	                FileWriter fw = new FileWriter(fichero, false); // false para sobrescribir el archivo
+	                for (String linea : lineas) {
+	                    fw.write(linea + "\n");
+	                }
+	                fw.close();
+	                return true; // Retornar true si se borró el cliente
+	            }
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	            return false;
+	        }
+
+	        return false; 
+	}
+	
 }

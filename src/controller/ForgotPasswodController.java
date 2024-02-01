@@ -7,7 +7,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class ForgotPasswod {
+public class ForgotPasswodController {
 	
     @FXML
     private Button buttonLogin;

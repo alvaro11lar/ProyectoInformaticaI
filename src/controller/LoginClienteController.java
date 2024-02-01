@@ -118,6 +118,24 @@ public class LoginClienteController {
     @FXML
     void recoverPass(ActionEvent event) {
     	
+    	try {
+			FXMLLoader loader3 = new FXMLLoader(getClass().getResource("/fxml/CheckUsername.fxml"));
+
+			CheckUsernameController control3 = new CheckUsernameController();
+
+			loader3.setController(control3);
+
+			Parent root3 = loader3.load();			
+			Stage stage = new Stage();
+
+			stage.setScene(new Scene(root3));
+			stage.initModality(Modality.WINDOW_MODAL);
+			stage.initOwner(((Node)(event.getSource())).getScene().getWindow());
+			stage.show();
+
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
     }
 
 }
