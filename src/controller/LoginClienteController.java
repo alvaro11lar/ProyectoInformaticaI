@@ -57,7 +57,7 @@ public class LoginClienteController {
 					FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/fxml/HomepageCliente.fxml"));
 					entro = true;
 					HomepageClienteController control2 = new HomepageClienteController();
-
+					control2.setC(c);
 					loader2.setController(control2);
 
 					Parent root2 = loader2.load();			

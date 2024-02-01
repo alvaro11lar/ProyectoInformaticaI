@@ -26,12 +26,12 @@
                   <Line endX="23.0" endY="122.0" layoutX="238.0" layoutY="450.0" startX="23.0" startY="-40.5" />
                   <Line endX="130.5" endY="-52.5" layoutX="-22.0" layoutY="461.0" startX="23.0" startY="-52.5" />
                   <Line endX="130.5" endY="-52.5" layoutX="-25.0" layoutY="574.0" startX="23.0" startY="-52.5" />
-                  <Button fx:id="buttonPurchaseHistory" layoutX="12.0" layoutY="415.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Purchase History" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                  <Button fx:id="buttonPurchaseHistory" layoutX="12.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Purchase History" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button layoutX="29.0" layoutY="376.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Edit" textFill="WHITE" />
+                  <Button layoutX="29.0" layoutY="376.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Edit" textFill="WHITE" />
                   <Button fx:id="buttonReturnProduct" layoutX="13.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Return Product" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
                         <Font size="11.0" />
@@ -202,12 +202,12 @@
                   <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="671.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="555.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true" />
                   <Line endX="98.5" layoutX="162.0" layoutY="442.0" startX="-55.0" />
-                  <Label layoutX="14.0" layoutY="71.0" prefHeight="29.0" prefWidth="82.0" />
-                  <Label layoutX="13.0" layoutY="122.0" prefHeight="29.0" prefWidth="82.0" />
-                  <Label layoutX="10.0" layoutY="169.0" prefHeight="29.0" prefWidth="82.0" />
-                  <Label layoutX="10.0" layoutY="214.0" prefHeight="29.0" prefWidth="82.0" />
-                  <Label layoutX="10.0" layoutY="259.0" prefHeight="29.0" prefWidth="82.0" />
-                  <Label layoutX="11.0" layoutY="312.0" prefHeight="60.0" prefWidth="82.0" />
+                  <Label fx:id="user" layoutX="14.0" layoutY="71.0" prefHeight="29.0" prefWidth="82.0" />
+                  <Label fx:id="firstName" layoutX="13.0" layoutY="122.0" prefHeight="29.0" prefWidth="82.0" />
+                  <Label fx:id="SecondName" layoutX="10.0" layoutY="169.0" prefHeight="29.0" prefWidth="82.0" />
+                  <Label fx:id="phoneNumber" layoutX="10.0" layoutY="214.0" prefHeight="29.0" prefWidth="82.0" />
+                  <Label fx:id="emailId" layoutX="10.0" layoutY="259.0" prefHeight="29.0" prefWidth="82.0" />
+                  <Label fx:id="DirerctionId" layoutX="11.0" layoutY="312.0" prefHeight="60.0" prefWidth="82.0" />
                   <Label layoutX="114.0" layoutY="213.0" prefHeight="29.0" prefWidth="131.0" />
                   <Label layoutX="114.0" layoutY="259.0" prefHeight="29.0" prefWidth="131.0" />
                   <Label layoutX="111.0" layoutY="299.0" prefHeight="29.0" prefWidth="131.0" />
