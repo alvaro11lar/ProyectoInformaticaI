@@ -21,11 +21,11 @@
                   <Line endX="949.0" endY="-1.52587890625E-5" layoutX="101.0" layoutY="47.0" startX="-100.0" />
                   <Line endX="-125.00003051757812" endY="507.0" layoutX="234.0" layoutY="136.0" startX="-125.0" startY="-88.5" />
                   <Line endX="-163.5" endY="-129.5" layoutX="423.0" layoutY="176.0" startX="-163.5" startY="307.5" />
-                  <Line endX="328.5" layoutX="301.0" layoutY="485.0" startX="158.5" />
+                  <Line endX="328.5" layoutX="300.0" layoutY="482.0" startX="155.0" startY="1.0" />
                   <Line endX="-98.0" endY="-222.5" layoutX="726.0" layoutY="265.0" startX="-98.0" startY="378.0" />
-                  <Line endX="23.0" endY="120.0" layoutX="436.0" layoutY="528.0" startX="23.0" startY="-40.5" />
+                  <Line endX="23.0" endY="120.0" layoutX="436.0" layoutY="528.0" startX="23.0" startY="-44.29290771484375" />
                   <Line endX="23.0" endY="122.0" layoutX="301.0" layoutY="527.0" startX="23.0" startY="-43.5" />
-                  <Line endX="130.5" endY="-52.5" layoutX="-22.0" layoutY="535.0" startX="23.0" startY="-52.5" />
+                  <Line endX="130.5" endY="-52.5" layoutX="-21.0" layoutY="535.0" startX="23.0" startY="-52.5" />
                   <Line endX="130.5" endY="-52.5" layoutX="-23.0" layoutY="653.0" startX="23.0" startY="-52.5" />
                   <Button fx:id="buttonPurchaseHistory" layoutX="15.0" layoutY="505.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Purchase History" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
@@ -63,7 +63,7 @@
                         <Font size="11.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="139.0" layoutY="539.0">
+                  <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="140.0" layoutY="539.0">
                      <image>
                         <Image url="@../../imagefxml/Untitled_design-removebg-preview.png" />
                      </image>
@@ -180,7 +180,7 @@
                      </font>
                   </Text>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="178.0" layoutX="643.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
-                  <Line endX="294.5" layoutX="165.0" layoutY="484.0" startX="-55.0" />
+                  <Line endX="294.5" layoutX="160.0" layoutY="483.0" startX="-55.0" />
                   <Label layoutX="14.0" layoutY="71.0" prefHeight="35.0" prefWidth="91.0" />
                   <Label layoutX="13.0" layoutY="124.0" prefHeight="41.0" prefWidth="87.0" />
                   <Label layoutX="10.0" layoutY="186.0" prefHeight="42.0" prefWidth="93.0" />
