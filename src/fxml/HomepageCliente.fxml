@@ -184,7 +184,10 @@
                      </font>
                   </Text>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="154.0" layoutX="546.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="103.0" />
-                  <ImageView fx:id="image1" fitHeight="88.0" fitWidth="88.0" layoutX="555.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="image1" fitHeight="88.0" fitWidth="88.0" layoutX="555.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagefxml/Agua.png" />
+                     </image></ImageView>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="154.0" layoutX="663.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="103.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="154.0" layoutX="778.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="103.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="154.0" layoutX="778.0" layoutY="236.0" stroke="BLACK" strokeType="INSIDE" width="103.0" />

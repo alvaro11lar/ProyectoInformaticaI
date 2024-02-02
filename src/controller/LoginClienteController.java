@@ -13,10 +13,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -56,8 +57,12 @@ public class LoginClienteController {
 				try {
 					FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/fxml/HomepageCliente.fxml"));
 					entro = true;
+					
 					HomepageClienteController control2 = new HomepageClienteController();
 					control2.setC(c);
+					
+					
+					
 					loader2.setController(control2);
 
 					Parent root2 = loader2.load();			
