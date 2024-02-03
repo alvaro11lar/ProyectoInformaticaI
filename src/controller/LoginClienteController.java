@@ -1,10 +1,12 @@
 package controller;
 
 
+import java.io.File;
 import java.util.List;
 
 import application.Client;
 import application.FileUtilAlmacen;
+import application.Product;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -57,15 +59,24 @@ public class LoginClienteController {
 				try {
 					FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/fxml/HomepageCliente.fxml"));
 					entro = true;
-					
+
 					HomepageClienteController control2 = new HomepageClienteController();
+					Product product = new Product("Agua", 1.00, 1.50, "agua del mecadona",   10,"Limon.png");					
+					Image myImage = new Image(product.getPath());
+					Image myImage2 = new Image("Agua.png");
+					//Image myImage3 = createImageView("imagefxml/Lays.png");
 					control2.setC(c);
-					
 					
 					
 					loader2.setController(control2);
 
-					Parent root2 = loader2.load();			
+					Parent root2 = loader2.load();
+					
+					ImageView iv = control2.getImage1();
+					iv.setImage(myImage);
+					control2.getImage2().setImage(myImage2);
+					
+					
 					Stage stage = new Stage();
 
 					stage.setScene(new Scene(root2));
@@ -143,4 +154,14 @@ public class LoginClienteController {
 		}
     }
 
+    
+    private ImageView createImageView(String imagePath) {
+        Image image = new Image(new File(imagePath).toURI().toString());
+        ImageView imageView = new ImageView(image);
+
+        // Adjuntar la ruta de la imagen como un dato adicional al ImageView
+        imageView.setUserData(imagePath);
+
+        return imageView;
+    }
 }

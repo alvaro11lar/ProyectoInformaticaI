@@ -102,7 +102,7 @@
                         <Font name="Arial Bold" size="14.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="127.0" fitWidth="142.0" layoutX="112.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imageInfo" fitHeight="127.0" fitWidth="142.0" layoutX="112.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
                   <Text fill="#004aad" layoutX="118.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name">
                      <font>
                         <Font name="Arial Bold" size="12.0" />
@@ -186,10 +186,10 @@
                   <Label layoutX="10.0" layoutY="257.0" prefHeight="42.0" prefWidth="94.0" />
                   <Label layoutX="10.0" layoutY="318.0" prefHeight="40.0" prefWidth="95.0" />
                   <Label layoutX="12.0" layoutY="376.0" prefHeight="57.0" prefWidth="90.0" />
-                  <Label layoutX="114.0" layoutY="213.0" prefHeight="29.0" prefWidth="141.0" />
-                  <Label layoutX="114.0" layoutY="259.0" prefHeight="29.0" prefWidth="141.0" />
-                  <Label layoutX="111.0" layoutY="299.0" prefHeight="29.0" prefWidth="143.0" />
-                  <Label layoutX="111.0" layoutY="343.0" prefHeight="94.0" prefWidth="144.0" />
+                  <Label fx:id="nameInfo" layoutX="114.0" layoutY="213.0" prefHeight="29.0" prefWidth="141.0" />
+                  <Label fx:id="priceInfo" layoutX="114.0" layoutY="259.0" prefHeight="29.0" prefWidth="141.0" />
+                  <Label fx:id="weightPrice" layoutX="111.0" layoutY="299.0" prefHeight="29.0" prefWidth="143.0" />
+                  <Label fx:id="descriptionIno" layoutX="111.0" layoutY="343.0" prefHeight="94.0" prefWidth="144.0" />
                   <Label layoutX="520.0" layoutY="485.0" prefHeight="29.0" prefWidth="102.0" />
                   <Label layoutX="520.0" layoutY="521.0" prefHeight="29.0" prefWidth="102.0" />
                   <Label layoutX="520.0" layoutY="559.0" prefHeight="29.0" prefWidth="102.0" />
@@ -198,11 +198,7 @@
                   <Label layoutX="378.0" layoutY="108.0" prefHeight="29.0" prefWidth="52.0" />
                   <Label layoutX="463.0" layoutY="108.0" prefHeight="29.0" prefWidth="27.0" />
                   <Label layoutX="520.0" layoutY="110.0" prefHeight="29.0" prefWidth="68.0" />
-                  <Button layoutX="649.0" layoutY="107.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
-                     <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
-                     </graphic>
-                  </Button>
+                  <Button layoutX="649.0" layoutY="107.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0" />
                   <Label layoutX="647.0" layoutY="71.0" prefHeight="29.0" prefWidth="114.0" />
                   <Label layoutX="648.0" layoutY="214.0" prefHeight="29.0" prefWidth="112.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="178.0" layoutX="776.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
@@ -211,7 +207,7 @@
                   <Label layoutX="781.0" layoutY="213.0" prefHeight="29.0" prefWidth="112.0" />
                   <Button layoutX="782.0" layoutY="107.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image2" fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="178.0" layoutX="911.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
@@ -315,6 +311,7 @@
                         <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
+                  <ImageView fx:id="image1" fitHeight="88.0" fitWidth="88.0" layoutX="660.0" layoutY="113.0" onMouseClicked="#mostarInfo" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
          </left>

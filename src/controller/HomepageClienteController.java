@@ -1,11 +1,23 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+
+import javax.print.DocFlavor.URL;
+
 import application.Client;
+import application.Product;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class HomepageClienteController {
 
@@ -73,7 +85,31 @@ public class HomepageClienteController {
     private ImageView image7;
     
     private Client c;
+    
+    @FXML
+    private ImageView imageInfo;
 
+    @FXML
+    private Label nameInfo;
+
+    @FXML
+    private Label priceInfo;
+
+    @FXML
+    private Label weightPrice;
+
+    @FXML
+    private Label descriptionIno;
+
+
+    void initialize(URL location, ResourceBundle resources) {
+        // Obtén la escena desde el ImageView
+        Scene scene = image1.getScene();
+
+        // Agrega el manejador de eventos global a la escena
+        scene.addEventFilter(MouseEvent.MOUSE_CLICKED, new GlobalClickHandler());
+    }
+    
     @FXML
     void showProfile(ActionEvent event) {
 
@@ -164,9 +200,65 @@ public class HomepageClienteController {
 	public void setImage7(ImageView image7) {
 		this.image7 = image7;
 	}
-    
-    
 
+	public ImageView getImageInfo() {
+		return imageInfo;
+	}
+
+	public void setImageInfo(ImageView imageInfo) {
+		this.imageInfo = imageInfo;
+	}
+
+	public Label getNameInfo() {
+		return nameInfo;
+	}
+
+	public void setNameInfo(Label nameInfo) {
+		this.nameInfo = nameInfo;
+	}
+
+	public Label getPriceInfo() {
+		return priceInfo;
+	}
+
+	public void setPriceInfo(Label priceInfo) {
+		this.priceInfo = priceInfo;
+	}
+
+	public Label getDescriptionIno() {
+		return descriptionIno;
+	}
+
+	public void setDescriptionIno(Label descriptionIno) {
+		this.descriptionIno = descriptionIno;
+	}
+    
+	@FXML
+    void mostarInfo(MouseEvent event) {
+		
+		List<Product> productos = new ArrayList<Product>();
+		Product product = new Product("Agua", 1.00, 1.50, "agua del mecadona",   10,"Limon.png");		
+		productos.add(product);
+		ImageView clickedImageView = (ImageView) event.getSource();
+		System.out.println(clickedImageView.getImage().impl_getUrl());
+		Product selectedProduct = productos.get(0);
+		imageInfo.setImage(new Image(selectedProduct.getPath()));
+	    nameInfo.setText(selectedProduct.getNombre());
+	    priceInfo.setText(String.valueOf(selectedProduct.getPrice()));
+	    descriptionIno.setText(selectedProduct.getDecription());
+		imageInfo.setImage(image1.getImage());
+		
+	
+		
+    }
+	
+	private static class GlobalClickHandler implements EventHandler<Event> {
+        @Override
+        public void handle(Event event) {
+            System.out.println("Clic global detectado.");
+            // Aquí puedes realizar acciones en respuesta al clic global
+        }
+    }
 
 	
 }

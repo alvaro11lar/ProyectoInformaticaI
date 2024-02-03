@@ -1,5 +1,7 @@
 package application;
 
+import javafx.scene.shape.Path;
+
 public class Product {
 	
 	private String nombre;
@@ -7,14 +9,16 @@ public class Product {
 	private double weight;
 	private String decription;
 	private  int quantityAvailble;
+	private  String path;
 	
-	public Product(String nombre, double price, double weight, String decription, int quantityAvailble) {
+	public Product(String nombre, double price, double weight, String decription, int quantityAvailble,String path) {
 		super();
 		this.nombre = nombre;
 		this.price = price;
 		this.weight = weight;
 		this.decription = decription;
 		this.quantityAvailble = quantityAvailble;
+		this.path = path;
 	}
 
 	public String getNombre() {
@@ -56,6 +60,16 @@ public class Product {
 	public void setQuantityAvailble(int quantityAvailble) {
 		this.quantityAvailble = quantityAvailble;
 	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	
 	
 	
 	
