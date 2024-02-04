@@ -61,20 +61,30 @@ public class LoginClienteController {
 					entro = true;
 
 					HomepageClienteController control2 = new HomepageClienteController();
-					Product product = new Product("Agua", 1.00, 1.50, "agua del mecadona",   10,"Limon.png");					
+					Product product = new Product("Agua", 1.00, 1.50, "agua del mecadona", 10,"Agua.png");					
 					Image myImage = new Image(product.getPath());
-					Image myImage2 = new Image("Agua.png");
-					//Image myImage3 = createImageView("imagefxml/Lays.png");
-					control2.setC(c);
+					Product product2 = new Product("Limon", 2.00, 1.80, "limon de Peru", 10,"Limon.png");					
+					Product product3 = new Product("Lays", 2.00, 1.80, "limin de Peru", 10,"Lays.png");	
+					Product product4 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");
+					Product product5 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");					
+					Product product6 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");					
+					Product product7 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");					
+					Product product8 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");			
+					Product product9 = new Product("Limon", 2.00, 1.80, "limin de Peru", 10,"Limon.png");					
+					
+					
 					
 					
 					loader2.setController(control2);
+					control2.setC(c);
 
 					Parent root2 = loader2.load();
 					
-					ImageView iv = control2.getImage1();
-					iv.setImage(myImage);
-					control2.getImage2().setImage(myImage2);
+					control2.getImage1().setImage(myImage);
+					
+					control2.getImage2().setImage(new Image(product2.getPath()));
+					
+					control2.getImage3().setImage(new Image(product3.getPath()));
 					
 					
 					Stage stage = new Stage();

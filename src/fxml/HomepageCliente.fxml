@@ -31,7 +31,7 @@
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button layoutX="31.0" layoutY="446.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Edit" textFill="WHITE" />
+                  <Button layoutX="31.0" layoutY="446.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Edit" textFill="WHITE" />
                   <Button fx:id="buttonReturnProduct" layoutX="14.0" layoutY="550.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #004AAD; -fx-background-radius: 20;" text="Return Product" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
                         <Font size="11.0" />
@@ -207,7 +207,7 @@
                   <Label layoutX="781.0" layoutY="213.0" prefHeight="29.0" prefWidth="112.0" />
                   <Button layoutX="782.0" layoutY="107.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fx:id="image2" fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image2" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo2" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="178.0" layoutX="911.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
@@ -225,22 +225,22 @@
                   <Label layoutX="916.0" layoutY="404.0" prefHeight="29.0" prefWidth="112.0" />
                   <Button layoutX="917.0" layoutY="107.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image3" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo3" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="917.0" layoutY="293.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image6" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo6" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="782.0" layoutY="293.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image5" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo5" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="649.0" layoutY="293.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image4" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo4" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="438.0" layoutY="109.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="15.0" style="-fx-background-color: #7ED957;" text="+" />
@@ -298,20 +298,20 @@
                   <Label layoutX="916.0" layoutY="595.0" prefHeight="29.0" prefWidth="112.0" />
                   <Button layoutX="649.0" layoutY="484.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image7" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo7" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="782.0" layoutY="484.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image8" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo8" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
                   <Button layoutX="917.0" layoutY="484.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="111.0">
                      <graphic>
-                        <ImageView fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="image9" fitHeight="88.0" fitWidth="88.0" onMouseClicked="#mostrarInfo9" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
-                  <ImageView fx:id="image1" fitHeight="88.0" fitWidth="88.0" layoutX="660.0" layoutY="113.0" onMouseClicked="#mostarInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="image1" fitHeight="88.0" fitWidth="88.0" layoutX="649.0" layoutY="108.0" onMouseClicked="#mostarInfo" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
          </left>
